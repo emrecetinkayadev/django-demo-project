@@ -1,0 +1,13 @@
+<html>
+  <h1>These are the notes:</h1>
+
+  <ul>
+    {% for note in notes %}
+    <li>
+      {{note.title}}
+      <h5>{{note.text}}</h5>
+    </li>
+
+    {% endfor %}
+  </ul>
+</html>
