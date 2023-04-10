@@ -5,8 +5,9 @@
     <p class="border rounded p-4 shadow-sm font-sans-serif">{{note.text}}</p>
   </div>
   <div>
-    <a href="{% url 'home.view' %}" class="btn btn-primary">Home Page</a>
-    <a href="{% url 'notes.list' %}" class="btn btn-primary">Notes</a>
+    <a href="{% url 'notes.list' %}" class="btn btn-secondary">Back</a>
+    <a href="{% url 'notes.update' pk=note.id %}" class="btn btn-secondary">Edit</a>
+    <a href="{% url 'notes.delete' pk=note.id %}" class="btn btn-danger">Delete</a>
   </div>
 </div>
 
